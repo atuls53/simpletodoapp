@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Simple TODO APP</title>
+  <title>Material Design for Bootstrap</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -30,93 +30,94 @@
   <script src="js/script.js"></script>
 
 </head>
+
 <body>
-	<header>
-	
-	</header>
+  <header>
 
-	<section class="add_todo_hold">
-		<div class="create_form card">
-			 <div class="bs-component">
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade  active in" id="notes">
-					<div class="form-group label-floating is-empty">
-					<label class="control-label" for="focusedInput2">Note Title</label>
-					<input class="form-control" id="notes-title" type="text">
-					
-					</div>	
-					<div class="form-group label-floating is-empty">
-					<label class="control-label" for="focusedInput2">Note Description</label>
-					<textarea class="form-control" id="notes-description"></textarea>
-					</div>
-					
-					<div class="text-right">
-						<a href="javascript:void(0)" class="btn btn-raised btn-primary" onclick="add_notes();">Create Note</a>
-					</div>
-                </div>
-                <div class="tab-pane fade" id="list">
-					<div class="form-group label-floating is-empty">
-					<label class="control-label" for="focusedInput2">List Title</label>
-					<input class="form-control" id="focusedInput2" type="text">
-					<p class="help-block">You should really write something here</p>
-					<span class="material-input"></span>
-					</div>
+  </header>
 
-                </div>
-               
-              </div>
-            
-			   <ul class="nav nav-tabs" id="todo-nav">
-               <li class="active">
-                  <a href="#notes" data-toggle="tab" aria-expanded="false">
-               <i class="fa fa-sticky-note" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#list" data-toggle="tab" aria-expanded="false">
-                  <i class="fa fa-list" aria-hidden="true"></i>
-                  </a>
-                </li>
-                
-              </ul>
-             
+  <section class="add_todo_hold">
+    <div class="create_form card">
+      <div class="bs-component">
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade  active in" id="notes">
+            <div class="form-group label-floating is-empty">
+              <label class="control-label" for="focusedInput2">Note Title</label>
+              <input class="form-control" id="notes-title" type="text">
 
-			</div>
-		
-		</div>
-	</section>
-	
-	<section class="todo_list">
-		<div class="container">
-			<div class="row" id="todo_list">
-				
-			
-			</div>
-		</div>
-	
+            </div>
+            <div class="form-group label-floating is-empty">
+              <label class="control-label" for="focusedInput2">Note Description</label>
+              <textarea class="form-control" id="notes-description"></textarea>
+            </div>
 
-	</section>
+            <div class="text-right">
+              <a href="javascript:void(0)" class="btn btn-raised btn-primary" onclick="add_notes();">Create Note</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list">
+            <div class="form-group label-floating is-empty">
+              <label class="control-label" for="focusedInput2">List Title</label>
+              <input class="form-control" id="focusedInput2" type="text">
+              <p class="help-block">You should really write something here</p>
+              <span class="material-input"></span>
+            </div>
 
-<!-- Twitter Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+          </div>
 
-<!-- Material Design for Bootstrap -->
-<script src="js/material.min.js"></script>
-<script src="js/ripples.min.js"></script>
-<script>
-  $.material.init();
-</script>
+        </div>
+
+        <ul class="nav nav-tabs" id="todo-nav">
+          <li class="active">
+            <a href="#notes" data-toggle="tab" aria-expanded="false">
+              <i class="fa fa-sticky-note" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#list" data-toggle="tab" aria-expanded="false">
+              <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        </ul>
 
 
-<!-- Sliders -->
-<script src="js/jquery.nouislider.min.js"></script>
-<script>
-  $(function () {
+      </div>
+
+    </div>
+  </section>
+
+  <section class="todo_list">
+    <div class="container">
+      <div class="row" id="todo_list">
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Twitter Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Material Design for Bootstrap -->
+  <script src="js/material.min.js"></script>
+  <script src="js/ripples.min.js"></script>
+  <script>
     $.material.init();
+  </script>
 
-  });
-</script>
+
+  <!-- Sliders -->
+  <script src="js/jquery.nouislider.min.js"></script>
+  <script>
+    $(function () {
+      $.material.init();
+
+    });
+  </script>
 
 
 </body>
+
 </html>

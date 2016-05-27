@@ -22,13 +22,14 @@ section {
 }
 
 .card {
-  -webkit-box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 2px;
-  border: 0;
-  padding: 15px;
-  position: relative;
-  transition: all 0.5s;
+-webkit-box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+    border: 0;
+    padding: 15px;
+    position: relative;
+    transition: all 0.5s;
+    min-height: 190px;
 }
 
 .create_form {
@@ -117,16 +118,62 @@ ul#todo-nav {}
   border: solid 1px #ddd;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
   text-align: center;
   line-height: 28px;
   font-weight: 600;
-  top: -17px;
+  top: 2px;
   background: #F9F4F4;
-  right: -4px;
+  right: 2px;
   transition: all 0.5s;
   opacity: 0;
+  font-size: 19px;
+  border-radius: 3px;
 }
-.card:hover .del_todo{
+
+.card:hover .del_todo {
   opacity: 1;
+}
+
+.card h3 {
+  margin-bottom: 0;
+}
+
+.card em {
+  display: block;
+  margin-bottom: 5px;
+  padding: 7px 0;
+}
+ul#todo-nav li.active a, ul#todo-nav li:hover a {
+    color: #009688 !important;
+}
+.navigation_tasks {
+    text-align: right;
+    position: relative;
+  z-index: 999;
+}
+.navigation_tasks .btn {
+    padding: 1px 12px;
+    font-size: 26px;
+    font-weight: normal;
+}
+.navigation_tasks ul li{
+    display: block;
+    width: 100%;
+}
+.navigation_tasks ul.open{}
+
+.navigation_tasks ul {
+    text-align: left;
+    width: 132px;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    border-radius: 5px;
+    left: auto;
+}
+
+span.del_todo a {
+    font-weight: bold;
+    color: #333;
+    font-family: calibri;
 }
